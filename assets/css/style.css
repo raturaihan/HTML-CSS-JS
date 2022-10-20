@@ -1,2 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
 @import url('font-awesome.css');  
+
+footer i{
+    color: white;
+}
+
+.bg-red{
+    background-color: #ed5440;
+}
+
+.bg-pink{
+    background-color: #d866b2;
+}
+
+.bg-green{
+    background-color: #4ac467;
+}
+
+.bg-blue{
+    background-color: #2aaef0;
+}
+
+.bg-footer{
+    background-color: #037de8;
+}
+
+.nav-focus{
+    color: #037de8 !important;
+}
