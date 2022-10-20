@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
 @import url('font-awesome.css');  
 
+
 footer i{
     color: white;
 }
@@ -23,8 +24,21 @@ footer i{
 
 .bg-footer{
     background-color: #037de8;
+    bottom: 0px;
 }
 
 .nav-focus{
     color: #037de8 !important;
+}
+
+.btn-primary{
+    background-color: #328cca !important;
+}
+
+.bg-blue2{
+    background-color: #3876ac;
+}
+
+.bg-accordion{
+    background-color: #b9b9b9 !important; 
 }
