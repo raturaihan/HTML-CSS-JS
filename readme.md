@@ -4,7 +4,7 @@ In this assignment, you have the task to develop a portfolio website with its ow
 
 ## General Directions
 
-- Checkout this repository
+- Fork this repository
 - Make a development branch named 'dev'
 - Create Merge Request and all of your trainers as reviewers
 - **Don't** merge the merge request by yourself
