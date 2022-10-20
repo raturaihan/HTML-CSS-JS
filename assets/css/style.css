@@ -42,3 +42,49 @@ footer i{
 .bg-accordion{
     background-color: #b9b9b9 !important; 
 }
+
+.accordion-button:after{
+    display: none;
+}
+
+.accordion-button:before {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-right: 20px;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+    transform: rotate(-90deg);
+}
+
+.accordion-button:not(.collapsed)::before {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: rotate(0deg);
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.vertical-line{
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
