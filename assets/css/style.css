@@ -31,7 +31,6 @@ footer i{
 
 .bg-footer{
     background-color: #037de8;
-    bottom: 0px;
 }
 
 .nav-focus{
@@ -103,4 +102,23 @@ footer i{
 
 a {
     text-decoration: none !important;
-  }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+.nav-link {
+    font-weight: bold !important;
+}
+
+footer {
+    height: 20px;
+}
+
+main {
+    min-height: calc(100vh - 40px);
+}

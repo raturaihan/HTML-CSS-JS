@@ -4,6 +4,12 @@ const removeFormatting = (displayString) => {
     return intValue
 }
 
+const removeMinus = (displayString) => {
+    cleanString = displayString.replace('-', '')
+    intValue = parseInt(cleanString)
+    return intValue
+}
+
 const addButtonClick = () => {
     let parent = document.getElementById("history")
     let historyList = document.createElement("li")
@@ -57,7 +63,6 @@ parent.addEventListener("click", function(e){
     let expenseAmount = document.getElementById("price-expense")
     let expense = removeFormatting(expenseAmount.innerHTML)
     let income = removeFormatting(incomeAmount.innerHTML)
-    let total = removeFormatting(balanceAmount.innerHTML)
 
     if (e.target.tagName == "BUTTON") {
         e.target.parentNode.remove();
@@ -66,7 +71,7 @@ parent.addEventListener("click", function(e){
         let minus = balance.includes("-")
     
         if (minus === true) {
-            expense -= balance
+            expense -= removeMinus(balance)
             expenseAmount.innerHTML = expense
         } else {
             income -= balance
