@@ -1,1 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+*{
+    font-family: 'JetBrains Mono';
+}
+
+.vertical-line{
+    border-left: 1px solid black;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 3px;
+}
+
+.tracker-card{
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 3em;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.btn-tracker{
+    background-color: #2d3146;
+    color: white;
+}
+
+input::placeholder {
+    font-size: 10px;
+}
+
+input{
+    border: 1px solid #ccc;
+}
+
+.price-income{
+    color: green;
+}
+
+.price-expense{
+    color: red;
+}

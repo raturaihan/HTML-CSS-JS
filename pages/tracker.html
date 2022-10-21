@@ -6,31 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tracker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-tracker.css">
 </head>
 <body>
     <h2 class="text-center mt-5"><a href="./index.html">Home</a></h2>
-    <h2 class="text-center my-5">Expense Tracker</h2>
+    <h2 class="text-center my-5 fw-bold">Expense Tracker</h2>
     <div class="d-flex flex-row justify-content-center">
-        <div class="card" style="width: 25rem;">
+        <div class="card tracker-card" style="width: 25rem;">
             <div class="card-body">
-              <h6 class="card-title">YOUR BALANCE</h6>
-              <h2 class="price">Rp 0</h2>
+              <h6 class="card-title fw-bold">YOUR BALANCE</h6>
+              <h2 class="price-balance fw-bold">Rp 0</h2>
               <div class="d-flex justify-content-center">
                 <div class="row">
-                    <div class="col">
-                        <h6>INCOME</h6>
-                        <h6>+Rp 0</h6>
+                    <div class="col px-5">
+                        <h6 class="fw-bold">INCOME</h6>
+                        <h6 class="price-income">+Rp 0</h6>
                     </div>
                     <div class="vertical-line"></div>
-                    <div class="col">
-                        <h6>EXPENSE</h6>
-                        <h6>-Rp 0</h6>
+                    <div class="col px-5">
+                        <h6 class="fw-bold">EXPENSE</h6>
+                        <h6 class="price-expense">-Rp 0</h6>
                     </div>
                 </div>
               </div>
-            </div>
-          </div>
+              <div class="container">
+                <div class="row mt-5">
+                    <h5 class="fw-bold">History</h5>
+                    <div class="d-flex history justify-content-between">
+                        <p class="history-details"></p>
+                        <p class="history-amount"></p>
+                    </div>
+                    <!-- <ul id="history" class="list-unstyled">  
+                    </ul> -->
+                    <hr>
+                </div>
+                <div class="row mt-4">
+                    <h5 class="fw-bold">New Transaction</h5>
+                    <hr>
+                </div>
+                <div class="row mt-1">
+                    <h6 class="fw-bold">Transaction Details</h6>
+                    <input type="text" placeholder="Enter Details..." id="input-details">
+                </div>
+                <div class="row mt-3">
+                    <h6 class="fw-bold">Amount <br> (negative - expense, positive - income)</h6>
+                    <input type="number" placeholder="Enter amount..." id="input-amount">
+                </div>
+                <div class="row mt-3 mb-5">
+                    <button class="btn btn-tracker" type="submit" onclick="add()">Add transaction</button>
+                </div>
+              </div>
+        </div>
     </div>
+    <script src="tracker.js"></script>
 </body>
 </html>
