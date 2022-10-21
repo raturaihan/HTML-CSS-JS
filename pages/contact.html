@@ -64,24 +64,26 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-6 col-12">
-                    <div class="mb-3">
-                        <label for="inputName" class="form-label">Name*</label>
-                        <input type="text" class="form-control" id="inputName">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="inputName" class="form-label">Name*</label>
+                            <input type="text" class="form-control" id="inputName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail1" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="inputEmail1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputSubject" class="form-label">Subject*</label>
+                            <input type="text" class="form-control" id="inputSubject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputMessage" class="form-label">Message*</label>
+                            <textarea name="inputSubject" id="inputSubject" cols="30" class="form-control" rows="5" required></textarea>
+                        </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="inputEmail1" class="form-label">Email*</label>
-                        <input type="email" class="form-control" id="inputEmail1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputSubject" class="form-label">Subject*</label>
-                        <input type="text" class="form-control" id="inputSubject">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputMessage" class="form-label">Message*</label>
-                        <textarea name="inputSubject" id="inputSubject" cols="30" class="form-control" rows="5"></textarea>
-                    </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+                    </form>
                 <div class="col-lg-6 col-12 mt-4">
                     <h5>Contact Info</h5>
                     <p class="my-4 fw-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente magnam et quo, autem a ullam adipisci tempore voluptatibus.</p>
