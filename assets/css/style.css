@@ -79,3 +79,8 @@ footer i{
     width:100%;
     position:absolute;
 }
+
+.carousel-caption{
+    left: 0;
+    bottom: 2rem;
+}
